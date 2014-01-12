@@ -40,17 +40,19 @@
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and
 	# all kinds of trailing whitespace as an error.
 	# [default] trailing-space: looks for spaces at the end of a line
 	# [default] space-before-tab: looks for spaces before tabs at the beginning of
 	# a line
-	whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	whitespace = space-before-tab,tab-in-indent,trailing-space
 	# Make `git rebase` safer on OS X
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
+
+	editor = subl -w
 
 [color]
 	# Use colors in Git commands that are capable of colored output when
@@ -89,3 +91,27 @@
 
 [push]
 	default = matching
+
+[user]
+	name = Arek Wiertlewski
+	email = arek@jobs.ac.uk
+
+[hub]
+	protocol = https
+
+[merge]
+	tool = Kaleidoscope
+[diff]
+	tool = Kaleidoscope
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[mergetool]
+	keepBackup = true
+	prompt = false
+[difftool]
+	prompt = false

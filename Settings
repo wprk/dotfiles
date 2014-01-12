@@ -1,0 +1,115 @@
+
+# Install Package Control
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Package\ Control ]
+then
+    git clone https://github.com/wbond/sublime_package_control ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Package\ Control
+fi
+
+# Install Alignment
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Alignment ]
+then
+    git clone https://github.com/wbond/sublime_alignment ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Alignment
+fi
+
+# Install Behat
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Behat ]
+then
+    git clone https://github.com/omissis/sublime-behat-syntax ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Behat
+fi
+
+# Install BracketHighlighter
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/BracketHighlighter ]
+then
+    git clone https://github.com/facelessuser/BracketHighlighter ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/BracketHighlighter
+fi
+
+# Install CoffeeScript
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/CoffeeScript ]
+then
+    git clone https://github.com/Xavura/CoffeeScript-Sublime-Plugin ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/CoffeeScript
+fi
+
+# Install Emmet
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Emmet ]
+then
+    git clone https://github.com/sergeche/emmet-sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Emmet
+fi
+
+# Install Inc-Dec-Value
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Inc-Dec-Value ]
+then
+    git clone https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Inc-Dec-Value
+fi
+
+# Install LESS
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/LESS ]
+then
+    git clone https://github.com/danro/LESS-sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/LESS
+fi
+
+# Install Phpcs
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Phpcs ]
+then
+    git clone https://github.com/benmatselby/sublime-phpcs ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Phpcs
+fi
+
+# Install Puppet
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Puppet ]
+then
+    git clone https://github.com/russCloak/SublimePuppet ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Puppet
+fi
+
+# Install SideBarEnhancements
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/SideBarEnhancements ]
+then
+    git clone https://github.com/titoBouzout/SideBarEnhancements ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/SideBarEnhancements
+fi
+
+# Install SublimeLinter
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/SublimeLinter ]
+then
+    git clone https://github.com/SublimeLinter/SublimeLinter ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/SublimeLinter
+fi
+
+# Install Theme - Soda
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Theme\ -\ Soda ]
+then
+    git clone https://github.com/buymeasoda/soda-theme ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Theme\ -\ Soda
+fi
+
+# Install TrailingSpaces
+if [ ! -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/TrailingSpaces ]
+then
+    git clone https://github.com/SublimeText/TrailingSpaces ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/TrailingSpaces
+fi
+
+# Sync User Settings
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+ln -s ~/projects/dotfiles/sublime/Packages/User ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+
+# Sync Color Scheme Settings
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Color\ Scheme\ -\ Default
+ln -s ~/projects/dotfiles/sublime/Packages/Color\ Scheme\ -\ Default ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Color\ Scheme\ -\ Default
+
+# ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+rm -rf /usr/local/etc/php/5.5/php.ini
+ln -s ~/projects/dotfiles/php/php.ini /usr/local/etc/php/5.5/php.ini
+
+pear channel-discover pear.phpunit.de
+pear install --alldeps PHP_CodeSniffer
+pear channel-discover pear.pdepend.org
+pear install --alldeps pdepend/PHP_Depend
+pear channel-discover pear.phpmd.org
+pear install --alldeps phpmd/PHP_PMD
+
+brew install php-cs-fixer
+
+sudo pear config-set auto_discover 1
+sudo pear install pear.phpunit.de/PHPUnit
+
+#ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+#launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+
+# mysql.server start
+# mysql_secure_installation

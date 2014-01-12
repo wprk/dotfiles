@@ -1,0 +1,55 @@
+{
+    "bracket_styles": {
+	"default": {
+	    "icon": "dot",
+	    "color": "brackethighlighter.default",
+	    "style": "angle"
+	},
+	"unmatched": {
+	    "icon": "question",
+	    "color": "brackethighlighter.unmatched",
+	    "style": "angle"
+	},
+	"curly": {
+	    "icon": "curly_bracket",
+	    "color": "brackethighlighter.curly",
+	    "style": "angle"
+	},
+	"round": {
+	    "icon": "round_bracket",
+	    "color": "brackethighlighter.round",
+	    "style": "angle"
+	},
+	"square": {
+	    "icon": "square_bracket",
+	    "color": "brackethighlighter.square",
+	    "style": "angle"
+	},
+	"angle": {
+	    "icon": "angle_bracket",
+	    "color": "brackethighlighter.angle",
+	    "style": "angle"
+	},
+	"tag": {
+	    "icon": "tag",
+	    "color": "brackethighlighter.tag",
+	    "style": "angle"
+	},
+	"single_quote": {
+	    "icon": "single_quote",
+	    "color": "brackethighlighter.quote",
+	    "style": "angle"
+	},
+	"double_quote": {
+	    "icon": "double_quote",
+	    "color": "brackethighlighter.quote",
+	    "style": "angle"
+	},
+	"regex": {
+	    "icon": "regex",
+	    "color": "brackethighlighter.quote",
+	    "style": "angle"
+	}
+    },
+    "ignore_threshold": true
+}

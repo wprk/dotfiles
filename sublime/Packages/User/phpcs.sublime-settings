@@ -1,0 +1,15 @@
+{
+    "phpcs_executable_path": "/usr/local/opt/php55/bin/phpcs",
+    "phpcs_additional_args": {
+        "--standard": "PSR2",
+        "-n": ""
+    },
+    "phpmd_executable_path": "/usr/local/opt/php55/bin/phpmd",
+    "phpmd_run": true,
+    "phpmd_additional_args": {
+        "codesize,unusedcode,naming,design": ""
+    },
+    "php_cs_fixer_executable_path": "/usr/local/bin/php-cs-fixer",
+    "php_cs_fixer_show_quick_panel": true,
+    "phpcs_php_path": "/usr/local/opt/php55/bin/php"
+}

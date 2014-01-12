@@ -1,0 +1,30 @@
+{
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"default_line_ending": "unix",
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	"draw_indent_guides": true,
+	"ensure_newline_at_eof_on_save": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"rulers":
+	[
+		72,
+		80,
+		100,
+		120
+	],
+	"shift_tab_unindent": true,
+	"show_tab_close_buttons": true,
+	"spell_check": false,
+	"tab_size": 4,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}
