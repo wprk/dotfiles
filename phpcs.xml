@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset name="jobs">
+    <description>Coding standard based on PSR2 with some exclusions for compatibility with Zend Framework 1.</description>
+    <rule ref="PSR2"/>
+
+    <rule ref="PSR2.Methods.ClassDeclaration.Underscore">
+        <exclude-pattern>application/modules/*/Bootstrap.php</exclude-pattern>
+        <exclude-pattern>application/modules/*/controllers</exclude-pattern>
+    </rule>
+
+    <rule ref="PSR2.Methods.MethodDeclaration.Underscore">
+        <exclude-pattern>application/Bootstrap.php</exclude-pattern>
+        <exclude-pattern>application/modules/*/Bootstrap.php</exclude-pattern>
+    </rule>
+
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>application/Bootstrap.php</exclude-pattern>
+        <exclude-pattern>application/modules/*/Bootstrap.php</exclude-pattern>
+        <exclude-pattern>application/controllers</exclude-pattern>
+        <exclude-pattern>application/modules/*/controllers</exclude-pattern>
+    </rule>
+</ruleset>

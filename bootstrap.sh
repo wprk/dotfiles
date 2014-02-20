@@ -74,5 +74,11 @@ ln -s ~/projects/dotfiles/.wgetrc ~/.wgetrc
 rm -rf ~/Brewfile
 ln -s ~/projects/dotfiles/Brewfile ~/Brewfile
 
+rm -rf ~/phpcs.xml
+ln -s ~/projects/dotfiles/phpcs.xml ~/phpcs.xml
+
+rm -rf ~/phpmd.xml
+ln -s ~/projects/dotfiles/phpmd.xml ~/phpmd.xml
+
 rm -rf ~/Settings
 ln -s ~/projects/dotfiles/Settings ~/Settings
