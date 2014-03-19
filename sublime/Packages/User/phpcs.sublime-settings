@@ -1,13 +1,13 @@
 {
     "phpcs_executable_path": "/usr/local/opt/php55/bin/phpcs",
     "phpcs_additional_args": {
-        "--standard": "/Users/arek/phpcs.xml",
+        "--standard": "/Users/will/phpcs.xml",
         "-n": ""
     },
     "phpmd_executable_path": "/usr/local/opt/php55/bin/phpmd",
     "phpmd_run": true,
     "phpmd_additional_args": {
-        "/Users/arek/phpmd.xml": ""
+        "/Users/will/phpmd.xml": ""
     },
     "php_cs_fixer_executable_path": "/usr/local/bin/php-cs-fixer",
     "php_cs_fixer_show_quick_panel": true,

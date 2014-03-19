@@ -93,8 +93,8 @@
 	default = matching
 
 [user]
-	name = Arek Wiertlewski
-	email = arek@jobs.ac.uk
+	name = Will Parker
+	email = will@jobs.ac.uk
 
 [hub]
 	protocol = https
