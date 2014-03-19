@@ -1,3 +1,2 @@
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
-export PATH="$(brew --prefix php55)/bin:$PATH"
+#export PATH="$(brew --prefix php55)/bin:$PATH"

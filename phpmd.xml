@@ -40,7 +40,7 @@
     <rule ref="rulesets/codesize.xml/ExcessiveMethodLength">
         <properties>
             <!-- 10 ELOC + 1 function declaration + 1 to break threshold -->
-            <!-- <property name="minimum" value="12" /> -->
+            <property name="minimum" value="12" />
             <property name="ignore-whitespace" value="true" />
         </properties>
     </rule>
@@ -48,7 +48,7 @@
     <rule ref="rulesets/codesize.xml/ExcessiveClassLength">
         <properties>
             <!-- 100 ELOC + 1 class declaration + 1 to break threshold -->
-            <!-- <property name="minimum" value="102" /> -->
+            <property name="minimum" value="102" />
             <property name="ignore-whitespace" value="true" />
         </properties>
     </rule>
